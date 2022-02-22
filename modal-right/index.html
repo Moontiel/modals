@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Modal right</title>
+		<link rel="stylesheet" href="./sass/style.css" />
+	</head>
+
+	<body>
+		<header>header</header>
+
+		<!--  
+			section_name: contenedor de la seccion
+		-->
+		<div class="section_name">
+			<!--  
+				container_name: contenedor encargado del 
+				responsive
+			-->
+			<div class="container_name">
+				<!--  
+					flexbox_name: contenedor definido para
+					implementar flexbox
+				-->
+				<div class="flexbox_name">
+					<!--  
+						visible_modal: parte visible del modal, contiene
+						1 tag-h2, 1 caja box_img, 1 tag-p y 1 caja box_btn
+					-->
+					<section class="visible_modal">
+						<!--  
+							tag-h2: titulo del modal
+						-->
+						<h2>Titulo del modal</h2>
+
+						<!--  
+							box_img: contiene una tag-img
+						-->
+						<div class="box_img">
+							<!--  
+								tag-img: imagen del modal
+							-->
+							<img src="./assets/img/04.jpg" alt="img">
+						</div>
+
+						<!--  
+							tag-p: parrafo del modal
+						-->
+						<p>
+							Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. 
+							Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+							Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+							Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+							Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+						</p>
+
+						<!--  
+							box_btn: contiene una tag-button
+						-->
+						<div class="box_btn">
+							<!--  
+								tag-button: boton del modal le definimos un ID
+								para implementar este elemento en javascript
+							-->
+							<button type="button" id="show-hidden-modal">Read More</button>
+						</div>
+					</section>
+
+					<!--  
+						hidden_modal: parte oculta del modal, le
+						definimos un ID para implementar este elemento
+						en javascript
+					-->
+					<div class="hidden_modal" id="hidden-modal">
+						<!--  
+							content_modal: contenedor de 1 caja box_icon,
+							1 tag-h2, 1 caja box_img, 1 tag-p y 1 caja box_btn
+						-->
+						<section class="content_modal">
+							<div class="box_icon">
+								<svg xmlns="http://www.w3.org/2000/svg" 
+									viewBox="0 0 24 24">
+									<path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+								</svg>
+							</div>
+							
+							<!--  
+								tag-h2: titulo del modal oculto
+							-->
+							<h2>Titulo del modal</h2>
+			
+							<!--  
+								box_img: contiene una tag-img
+							-->
+							<div class="box_img">
+								<!--  
+									tag-img: imagen del modal oculto
+								-->
+								<img src="./assets/img/04.jpg" alt="img">
+							</div>
+			
+							<!--  
+								tag-p: parrafo del modal oculto
+							-->
+							<p>
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. 
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+								Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+							</p>
+			
+							<!--  
+								box_btn: contiene una tag-button
+							-->
+							<div class="box_btn">
+								<!--  
+									tag-button: boton del modal oculto
+								-->
+								<button type="button">Close Modal</button>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>footer</footer>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>
